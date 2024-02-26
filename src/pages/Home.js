@@ -1,16 +1,16 @@
+
 import React, { Fragment } from 'react';
+import {useNavigate} from 'react-router-dom';
 import Product from './Product';    
 import Blog from './Blog';
-import Contact from './Contact';
 
-function Index(){
+function Home(){
+    let navigate = useNavigate();
     return(
         <Fragment>
             <div className="carousel">
-                <Menu />
                 <Product />
                 <Blog />
-                <Contact />
 
                 {/* list */}
 
@@ -23,13 +23,13 @@ function Index(){
                         <div className="content">
                             <div className="author">LUNDEV</div>
                             <div className="title">pajamasDog</div>
-                            <div className="topic">Accessories Related</div>
+                            <div className="topic">Food Related</div>
                             <div className="des">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                             </div>
                             <div className="buttons">
-                                <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button onClick={() => {navigate('/Product/Food');}}>SEE MORE</button>
+                                <button onClick={() => {navigate('/Sign in');}}>SUBSCRIBE</button>
                             </div>
                         </div>
                     </div>
@@ -41,13 +41,13 @@ function Index(){
                         <div className="content">
                             <div className="author">LUNDEV</div>
                             <div className="title">pajamasDog</div>
-                            <div className="topic">C&C</div>
+                            <div className="topic">Pajamas Related</div>
                             <div className="des">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                             </div>
                             <div className="buttons">
-                                <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button onClick={() => {navigate('/Product/Pajamas');}}>SEE MORE</button>
+                                <button onClick={() => {navigate('/Sign in');}}>SUBSCRIBE</button>
                             </div>
                         </div>
                     </div>
@@ -59,13 +59,13 @@ function Index(){
                         <div className="content">
                             <div className="author">LUNDEV</div>
                             <div className="title">pajamasDog</div>
-                            <div className="topic">Pajamas Related</div>
+                            <div className="topic">Leash Related</div>
                             <div className="des">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                             </div>
                             <div className="buttons">
-                                <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button onClick={() => {navigate('/Product/Leash');}}>SEE MORE</button>
+                                <button onClick={() => {navigate('/Sign in');}}>SUBSCRIBE</button>
                             </div>
                         </div>
                     </div>
@@ -77,13 +77,13 @@ function Index(){
                         <div className="content">
                             <div className="author">LUNDEV</div>
                             <div className="title">pajamasDog</div>
-                            <div className="topic">Leash Related</div>
+                            <div className="topic">Photograph Related</div>
                             <div className="des">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                             </div>
                             <div className="buttons">
-                                <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button onClick={() => {navigate('/Product/Photograph');}}>SEE MORE</button>
+                                <button onClick={() => {navigate('/Sign in');}}>SUBSCRIBE</button>
                             </div>
                         </div>
                     </div>
@@ -95,13 +95,13 @@ function Index(){
                         <div className="content">
                             <div className="author">LUNDEV</div>
                             <div className="title">pajamasDog</div>
-                            <div className="topic">Photograph Related</div>
+                            <div className="topic">Health Related</div>
                             <div className="des">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                             </div>
                             <div className="buttons">
-                                <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button onClick={() => {navigate('/Product/Health');}}>SEE MORE</button>
+                                <button onClick={() => {navigate('/Sign in');}}>SUBSCRIBE</button>
                             </div>
                         </div>
                     </div>
@@ -113,13 +113,13 @@ function Index(){
                         <div className="content">
                             <div className="author">LUNDEV</div>
                             <div className="title">pajamasDog</div>
-                            <div className="topic">Food Related</div>
+                            <div className="topic">Bath Related</div>
                             <div className="des">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                             </div>
                             <div className="buttons">
-                                <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button onClick={() => {navigate('/Product/Bath');}}>SEE MORE</button>
+                                <button onClick={() => {navigate('/Sign in');}}>SUBSCRIBE</button>
                             </div>
                         </div>
                     </div>
@@ -131,13 +131,13 @@ function Index(){
                         <div className="content">
                             <div className="author">LUNDEV</div>
                             <div className="title">pajamasDog</div>
-                            <div className="topic">Bath Related</div>
+                            <div className="topic">Accessories Related</div>
                             <div className="des">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                             </div>
                             <div className="buttons">
-                                <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button onClick={() => {navigate('/Product/Accessories');}}>SEE MORE</button>
+                                <button onClick={() => {navigate('/Sign in');}}>SUBSCRIBE</button>
                              </div>
                         </div>
                      </div>
@@ -149,13 +149,13 @@ function Index(){
                         <div className="content">
                             <div className="author">LUNDEV</div>
                             <div className="title">pajamasDog</div>
-                            <div className="topic">Snack Related</div>
+                            <div className="topic">Life Related</div>
                             <div className="des">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                             </div>
                             <div className="buttons">
-                                <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button onClick={() => {navigate('/Product/Life');}}>SEE MORE</button>
+                                <button onClick={() => {navigate('/Sign in');}}>SUBSCRIBE</button>
                             </div>
                         </div>
                     </div>
@@ -167,10 +167,10 @@ function Index(){
                 <div className="thumbnail">
 
                     <div className="item">
-                        <img src="assets/image/img1.jpg" alt="Description of the pajamasDog" />
+                        <img src="assets/image/img1.jpg" alt="Description of the pajamasDog" onClick={() => {navigate('/Product/Food');}} />
                         <div className="content">
                             <div className="title">
-                                Accessories Related
+                                Food Related
                             </div>
                             <div className="description">
                                 Description
@@ -179,19 +179,7 @@ function Index(){
                     </div>
             
                     <div className="item">
-                        <img src="assets/image/img2.jpg" alt="Description of the pajamasDog" />
-                        <div className="content">
-                            <div className="title">
-                                C & C
-                            </div>
-                            <div className="description">
-                                Description
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="item">
-                        <img src="assets/image/img3.jpg" alt="Description of the pajamasDog" />
+                        <img src="assets/image/img2.jpg" alt="Description of the pajamasDog" onClick={() => {navigate('/Product/Pajamas');}} />
                         <div className="content">
                             <div className="title">
                                 Pajamas Related
@@ -203,7 +191,7 @@ function Index(){
                     </div>
 
                     <div className="item">
-                        <img src="assets/image/img4.jpg" alt="Description of the pajamasDog" />
+                        <img src="assets/image/img3.jpg" alt="Description of the pajamasDog" onClick={() => {navigate('/Product/Leash');}} />
                         <div className="content">
                             <div className="title">
                                 Leash Related
@@ -215,7 +203,7 @@ function Index(){
                     </div>
 
                     <div className="item">
-                        <img src="assets/image/img5.jpg" alt="Description of the pajamasDog" />
+                        <img src="assets/image/img4.jpg" alt="Description of the pajamasDog" onClick={() => {navigate('/Product/Photograph');}} />
                         <div className="content">
                             <div className="title">
                                 Photograph Related
@@ -227,10 +215,22 @@ function Index(){
                     </div>
 
                     <div className="item">
-                        <img src="assets/image/img6.jpg" alt="Description of the pajamasDog" />
+                        <img src="assets/image/img5.jpg" alt="Description of the pajamasDog" onClick={() => {navigate('/Product/Health');}} />
                         <div className="content">
                             <div className="title">
-                                Food Related
+                                Health Related
+                            </div>
+                            <div className="description">
+                                Description
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="item">
+                        <img src="assets/image/img6.jpg" alt="Description of the pajamasDog" onClick={() => {navigate('/Product/Bath');}} />
+                        <div className="content">
+                            <div className="title">
+                                Bath Related
                             </div>
                             <div className="description">
                                 Description
@@ -239,10 +239,10 @@ function Index(){
                     </div>
 
                     <div className="item">
-                        <img src="assets/image/img7.jpg" alt="Description of the pajamasDog" />
+                        <img src="assets/image/img7.jpg" alt="Description of the pajamasDog" onClick={() => {navigate('/Product/Accessories');}} />
                         <div className="content">
                             <div className="title">
-                                Bath Related
+                                Accessories Related
                             </div>
                             <div className="description">
                                 Description
@@ -251,10 +251,10 @@ function Index(){
                     </div>
 
                     <div className="item">
-                        <img src="assets/image/img8.jpg" alt="Description of the pajamasDog" />
+                        <img src="assets/image/img8.jpg" alt="Description of the pajamasDog" onClick={() => {navigate('/Product/Life');}} />
                         <div className="content">
                             <div className="title">
-                                Snack Related
+                                Life Related
                             </div>
                             <div className="description">
                                 Description
@@ -278,4 +278,4 @@ function Index(){
     )
 }
 
-export default Index;
+export default Home;
