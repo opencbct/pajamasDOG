@@ -1,8 +1,8 @@
 
 import React, { Fragment } from 'react';
 import {useNavigate} from 'react-router-dom';
-import Product from './Product';    
-import Blog from './Blog';
+import Product from './pages/Product';    
+import Blog from './pages/Blog';
 
 function Home(){
     let navigate = useNavigate();
